@@ -133,7 +133,10 @@ const Home = () => {
             Para transformar incertezas em confiança, tornando seus primeiros dias como pais
             uma experiência mais tranquila e feliz.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+            <Link to="/amamentacao" className="btn-secondary !text-white !border-white hover:!bg-white hover:!text-primary-600">
+              Amamentação
+            </Link>
             <Link to="/prevencao-acidentes" className="btn-secondary !text-white !border-white hover:!bg-white hover:!text-primary-600">
               Prevenção de Acidentes
             </Link>

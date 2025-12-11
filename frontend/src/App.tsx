@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import PreventingAccidents from './pages/PreventingAccidents'
 import FirstWeek from './pages/FirstWeek'
+import Breastfeeding from './pages/Breastfeeding'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/amamentacao" element={<Breastfeeding />} />
             <Route path="/prevencao-acidentes" element={<PreventingAccidents />} />
             <Route path="/primeira-semana" element={<FirstWeek />} />
           </Routes>
