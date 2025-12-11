@@ -87,6 +87,80 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Themes Section - Main Navigation by Themes */}
+      <section className="mb-16" aria-labelledby="themes-title">
+        <div className="max-w-5xl mx-auto">
+          <h2 id="themes-title" className="section-title text-primary-600 text-center mb-8">
+            Explore por Temas
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+            Navegue pelo conteúdo organizado por temas para encontrar as informações que você precisa:
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Primeiros Passos */}
+            <Link
+              to="/primeiros-passos"
+              className="card group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 hover:border-primary-400"
+            >
+              <div className="text-center">
+                <div className="w-20 h-20 mx-auto mb-4 bg-primary-100 rounded-full flex items-center justify-center group-hover:bg-primary-200 transition-colors">
+                  <span className="text-4xl">👶</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary-600 mb-3">Primeiros Passos</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Tudo que você precisa saber nos primeiros dias: vacinas, testes de triagem,
+                  primeira consulta e os cuidados essenciais para seu recém-nascido.
+                </p>
+                <div className="mt-4 text-primary-600 font-semibold group-hover:text-primary-700">
+                  Acessar →
+                </div>
+              </div>
+            </Link>
+
+            {/* Higiene e Cuidados Diários */}
+            <Link
+              to="/higiene-cuidados"
+              className="card group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-secondary-50 to-white border-2 border-secondary-200 hover:border-secondary-400"
+            >
+              <div className="text-center">
+                <div className="w-20 h-20 mx-auto mb-4 bg-secondary-100 rounded-full flex items-center justify-center group-hover:bg-secondary-200 transition-colors">
+                  <span className="text-4xl">🛁</span>
+                </div>
+                <h3 className="text-2xl font-bold text-secondary-600 mb-3">Higiene e Cuidados Diários</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Orientações sobre banho, troca de fraldas, cuidados com o coto umbilical,
+                  amamentação e a rotina diária do bebê.
+                </p>
+                <div className="mt-4 text-secondary-600 font-semibold group-hover:text-secondary-700">
+                  Acessar →
+                </div>
+              </div>
+            </Link>
+
+            {/* Prevenções */}
+            <Link
+              to="/prevencoes"
+              className="card group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 hover:border-primary-400"
+            >
+              <div className="text-center">
+                <div className="w-20 h-20 mx-auto mb-4 bg-primary-100 rounded-full flex items-center justify-center group-hover:bg-primary-200 transition-colors">
+                  <span className="text-4xl">🛡️</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary-600 mb-3">Prevenções</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Guia completo de segurança: prevenção de acidentes domésticos,
+                  sono seguro, quedas e cuidados essenciais para proteger seu bebê.
+                </p>
+                <div className="mt-4 text-primary-600 font-semibold group-hover:text-primary-700">
+                  Acessar →
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* What You'll Find */}
       <section className="mb-16" aria-labelledby="resources-title">
         <div className="card max-w-5xl mx-auto">
@@ -133,14 +207,9 @@ const Home = () => {
             Para transformar incertezas em confiança, tornando seus primeiros dias como pais
             uma experiência mais tranquila e feliz.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/prevencao-acidentes" className="btn-secondary !text-white !border-white hover:!bg-white hover:!text-primary-600">
-              Prevenção de Acidentes
-            </Link>
-            <Link to="/primeira-semana" className="btn-secondary !text-white !border-white hover:!bg-white hover:!text-primary-600">
-              Primeira Semana
-            </Link>
-          </div>
+          <p className="text-lg opacity-90">
+            Escolha um tema acima e comece sua jornada de aprendizado!
+          </p>
         </div>
       </section>
     </div>

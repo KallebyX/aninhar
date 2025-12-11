@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import PreventingAccidents from './pages/PreventingAccidents'
-import FirstWeek from './pages/FirstWeek'
+import PrimeirosPassos from './pages/PrimeirosPassos'
+import HigieneCuidados from './pages/HigieneCuidados'
+import Prevencoes from './pages/Prevencoes'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/prevencao-acidentes" element={<PreventingAccidents />} />
-            <Route path="/primeira-semana" element={<FirstWeek />} />
+            <Route path="/primeiros-passos" element={<PrimeirosPassos />} />
+            <Route path="/higiene-cuidados" element={<HigieneCuidados />} />
+            <Route path="/prevencoes" element={<Prevencoes />} />
           </Routes>
         </main>
         <Footer />

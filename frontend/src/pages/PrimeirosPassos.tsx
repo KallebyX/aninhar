@@ -1,11 +1,10 @@
-const FirstWeek = () => {
+const PrimeirosPassos = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Header */}
       <section className="text-center mb-12" aria-labelledby="page-title">
         <h1 id="page-title" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Compromissos Importantes Durante a<br />
-          <span className="text-primary-600">Primeira Semana de Vida do Bebê</span>
+          <span className="text-primary-600">Primeiros Passos</span>
         </h1>
         <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
           <p>
@@ -27,7 +26,7 @@ const FirstWeek = () => {
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">💉</span>
             <h2 id="vaccines" className="section-title mb-0">
-              1. As Primeiras Vacinas: Hepatite B e BCG
+              As Primeiras Vacinas: Hepatite B e BCG
             </h2>
           </div>
 
@@ -75,7 +74,7 @@ const FirstWeek = () => {
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🔬</span>
             <h2 id="screening" className="section-title mb-0">
-              2. Testes de Triagem Neonatal
+              Testes de Triagem Neonatal
             </h2>
           </div>
 
@@ -156,7 +155,7 @@ const FirstWeek = () => {
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">👨‍⚕️</span>
             <h2 id="consultation" className="section-title mb-0">
-              3. Primeira Consulta Pediátrica
+              Primeira Consulta Pediátrica
             </h2>
           </div>
 
@@ -215,7 +214,7 @@ const FirstWeek = () => {
       <section className="mb-12" aria-labelledby="checklist">
         <div className="card max-w-5xl mx-auto border-4 border-primary-200">
           <h2 id="checklist" className="section-title text-center text-primary-600 mb-6">
-            📋 Checklist da Primeira Semana
+            📋 Checklist dos Primeiros Passos
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-3">
@@ -266,4 +265,4 @@ const FirstWeek = () => {
   )
 }
 
-export default FirstWeek
+export default PrimeirosPassos

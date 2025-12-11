@@ -7,8 +7,9 @@ const Header = () => {
 
   const navItems = [
     { path: '/', label: 'Início' },
-    { path: '/prevencao-acidentes', label: 'Prevenção de Acidentes' },
-    { path: '/primeira-semana', label: 'Primeira Semana' }
+    { path: '/primeiros-passos', label: 'Primeiros Passos' },
+    { path: '/higiene-cuidados', label: 'Higiene e Cuidados' },
+    { path: '/prevencoes', label: 'Prevenções' }
   ]
 
   const isActive = (path: string) => location.pathname === path
@@ -20,14 +21,15 @@ const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="text-2xl md:text-3xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
+            className="text-2xl md:text-3xl font-bold text-primary-600 hover:text-primary-700 transition-colors flex items-center"
             aria-label="Página inicial do Projeto Aninhar"
           >
-            🏠 Projeto Aninhar
+            <span className="text-3xl md:text-4xl mr-2">🏠</span>
+            <span>Projeto Aninhar</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-8">
+          <ul className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <li key={item.path}>
                 <Link
