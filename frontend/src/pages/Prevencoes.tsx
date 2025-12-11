@@ -1,10 +1,10 @@
-const PreventingAccidents = () => {
+const Prevencoes = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Header */}
       <section className="text-center mb-12" aria-labelledby="page-title">
         <h1 id="page-title" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Como Prevenir Acidentes com o Bebê?
+          <span className="text-primary-600">Prevenções</span>
         </h1>
         <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
           <p>
@@ -265,4 +265,4 @@ const PreventingAccidents = () => {
   )
 }
 
-export default PreventingAccidents
+export default Prevencoes

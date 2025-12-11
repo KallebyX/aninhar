@@ -15,7 +15,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-primary-400">Links Úteis</h3>
+            <h3 className="text-xl font-bold mb-4 text-primary-400">Temas</h3>
             <ul className="space-y-2">
               <li>
                 <a href="/" className="text-gray-300 hover:text-primary-400 transition-colors">
@@ -23,13 +23,18 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/prevencao-acidentes" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Prevenção de Acidentes
+                <a href="/primeiros-passos" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  Primeiros Passos
                 </a>
               </li>
               <li>
-                <a href="/primeira-semana" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Primeira Semana
+                <a href="/higiene-cuidados" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  Higiene e Cuidados Diários
+                </a>
+              </li>
+              <li>
+                <a href="/prevencoes" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  Prevenções
                 </a>
               </li>
             </ul>
